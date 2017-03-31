@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Get your robot now!</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+var width = $(window).width() - 127;
+var height = $(window).height() - 111;
+
+function run() {
+    var top = Math.random() * height;
+    var left = Math.random() * width;
+    $('#theRunAwayButton').css('top', top + 'px').css('left', left + 'px');
+}
+
+$(document).ready(function() {
+    $('#theRunAwayButton').mouseover(run);
+    $('#theRunAwayButton').mousemove(run);
+});
+</script>
+<style>
+button {
+    position: absolute;
+   //    background: url(http://t0.gstatic.com/images?q=tbn:6JxQilywV2GyxM:http://images.clipartof.com/small/7038-Baseball-Mascot-Cartoon-Character-Running-Poster-Art-Print.jpg);
+    width: 127px;
+    height: 50px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Bazmarc and Seshan Brothers are giving away their
+	  robots **Limited time and quantity**</h1>
+    Name: <input type="name"><br>
+    Email: <input type="email"><br>
+    <p>
+      Which do you want?:<br>
+     <img src="https://scontent.fphl2-2.fna.fbcdn.net/v/t1.0-1/c47.14.172.172/p200x200/308590_303994116277587_866339713_n.jpg?oh=1d858e4e05f98ac22b71a22627fa88e8&oe=59991E7E" height="100" width="100">   <input type="radio" name="gender" value="w"> Wall-E 7 (bazmarc)<br>
+ <img src="http://www.beyondtheinstructions.com/img/portfolio/PIX3LPLOTT3R.jpg"height="100" width="100">
+      <input type="radio" name="gender" value="p"> Pix3l Plott3r (Seshan Brothers)<br>
+<img src="https://scontent.fphl2-2.fna.fbcdn.net/v/t1.0-9/12065813_903109119776266_88644277771901732_n.jpg?oh=43277107e46969c5cef9a45a52d80fcc&oe=59975EA1" height="100" width="100">  <input type="radio" name="gender" value="E"> EV3D Printer (bazmarc)<br>
+<img src="https://scontent.fphl2-2.fna.fbcdn.net/v/t1.0-9/10365831_295231620643519_162115911170863560_n.jpg?oh=4a6fe23055afa48d855c0dc6be6c7103&oe=596A9799" height="100" width="100">  <input type="radio" name="gender" value="R"> R2-EV3 (bazmarc)<br>
+  <img src="https://scontent.fphl2-2.fna.fbcdn.net/v/t1.0-0/c0.22.200.200/p200x200/14956432_1807779079479199_414623797037961249_n.jpg?oh=f3bcb427f9d7509c28002a54258d09eb&oe=594E2DCE" height="100" width="100"><input type="radio" name="gender" value="J"> Javi3r (Seshan Brothers)<br>
+
+    <div id="runaway-container">
+      <button id="theRunAwayButton">Submit</button>
+		</div>
+	</div>
+	
+	<br><br><br>	<br><br><br>
+	<br><br>
+	<i >Credits to Marc Andre Bazergui, Sanjay Seshan,
+	Arvind Seshan (Seshan Brothers), and Anurag (For the initial
+	code)</i>
+
+	<br><br><br>
+	<i style="font-size: 90%">Tired of the Submit button?
+	Visit <a href="http://www.bazmarc.ca"
+	onclick="alert('HaHa. April Fool\'s. Click Okay to continue to your page.');
+	document.location.href =
+	'http://www.bazmarc.ca';">bazmarc.ca</a> or <a href="http://www.beyondtheinstructions.com" onclick="alert('HaHa. April Fool\'s. Click Okay to continue to
+	your page.'); document.location.href = 'http://www.beyondtheinstructions.com'">beyondtheinstructions.com</a> </i>
+</body>
+</html>
